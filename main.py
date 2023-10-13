@@ -5,10 +5,10 @@ from sdl2.ext import Renderer
 sdl2.ext.init()
 
 # Загрузка изображения
-image_surface = sdl2.ext.load_image("C:/Users/KShevchenko/PycharmProjects/sdl2/v5.jpg")
+image_surface = sdl2.ext.load_image("C:/Users/KShevchenko/PycharmProjects/sdl2/v5.jpg") # нужно прописать свой путь, по которому у вас храниться эта картинка
 
 # Создание окна заданного размера
-window = sdl2.SDL_CreateWindow (chr(97), 100, 20, 800, 600, sdl2.SDL_WINDOW_SHOWN)
+window = sdl2.SDL_CreateWindow (chr(97), 100, 20, 800, 600, sdl2.SDL_WINDOW_SHOWN) # функция не работает, первый аргумент должен быть char а я не знаю как его таким указать
 
 # Получение рендерера для вывода изображения
 renderer = sdl2.SDL_CreateRenderer(window, -1, 0)
